@@ -15,7 +15,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      # PASTIKAN NAMA ACTION DI BARIS INI TERTULIS DENGAN BENAR
       - uses: athul/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
