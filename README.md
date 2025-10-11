@@ -18,8 +18,10 @@
 <br>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=imamputra1&show_icons=true&theme=synthwave&rank_icon=github&border_color=F72CBF" alt="github stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=imamputra1&layout=compact&theme=synthwave&border_color=F72CBF" alt="top langs" />
+<br>
+  <img src="https://github-readme-stats.vercel.app/api?username=imamputra1&show_icons=true&theme=synthwave&rank_icon=github&border_color=F72CBF" alt="github stats" />
+
 </p>
 <p align="center">
   </p>
