@@ -15,6 +15,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      # PASTIKAN NAMA ACTION DI BARIS INI TERTULIS DENGAN BENAR
       - uses: athul/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -23,7 +24,6 @@ jobs:
           # --- OPSI TAMPILAN ---
           SHOW_TITLE: true
           TIME_ZONE: Asia/Jakarta
-          # Opsi di bawah ini untuk menyembunyikan bagian yang tidak perlu agar mirip screenshot awal
           SHOW_PROJECTS: "False"
           SHOW_EDITORS: "False"
           SHOW_OS: "False"
