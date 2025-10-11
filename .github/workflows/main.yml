@@ -4,13 +4,20 @@ name: WakaTime Stats
 
 on:
   schedule:
-    - cron: '0 17 * * *' # Berjalan setiap hari pukul 17:00 UTC (00:00 WIB)
+    - cron: '0 17 * * *'
   workflow_dispatch:
 
 jobs:
   update-readme:
     name: Update README with WakaTime stats
     runs-on: ubuntu-latest
+    
+    #====================================================#
+    #   TAMBAHKAN BLOK KODE INI UNTUK MEMBERIKAN IZIN    #
+    permissions:
+      contents: write
+    #====================================================#
+      
     steps:
       - uses: anmol098/waka-readme-stats@master
         with:
