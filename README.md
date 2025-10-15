@@ -15,9 +15,8 @@
         <a href="#"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"></a>
     </p>
     <img src="httpsd://raw.githubusercontent.com/half-sane/half-sane/main/assets/github-header-line.svg" width="100%"/>
-
     <p align="left">
-        <a href="https://github.com/wiscaksono">
+    <a href="https://github.com/imamputra1">
         <img src="https://wakatime.com/badge/user/018b1e4c-1234-5678-9abc-2a44a7f232d0/project/018b1e4c-abcd-efgh-ijkl-3b55b9e59293.svg" alt="wakatime">
         </a>
     </p>
