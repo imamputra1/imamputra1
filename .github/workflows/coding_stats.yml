@@ -8,14 +8,22 @@ on:
 
 jobs:
   update-readme:
-    name: Update Readme with WakaTime Stats
+    name: Update This Repo's README
     runs-on: ubuntu-latest
+    # --- BAGIAN PALING PENTING: MEMBERI IZIN ---
+    permissions:
+      contents: write
+    # -------------------------------------------
     steps:
+      # Langkah 1: Checkout kode (wajib ada)
       - uses: actions/checkout@v4
-      - uses: anmol098/waka-readme-stats@master
+
+      # Langkah 2: Menjalankan action dari Athul (sesuai referensi yang berhasil)
+      - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           SHOW_TITLE: true
-          BLOCKS: "⣿⣄⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀"
-          CODE_LANG: "txt"
-          TIME_RANGE: "last_7_days"
+          SHOW_TIME: true
+          SHOW_MASKED_TIME: true
+          LANG_COUNT: 10
+          BLOCKS: '⣀⣄⣤⣦⣶⣷⣿' # Menggunakan gaya baris visual yang Anda suka
