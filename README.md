@@ -20,6 +20,20 @@
 ---
 
 <h2 align="center">Weekly Development Breakdown</h2>
+```txt
 
+
+
+
+
+
+
+
+
+
+
+
+
+```
 ---
 *<p align="center">Powered by <a href="https://wakatime.com">WakaTime</a> and <a href="https://github.com/features/actions">GitHub Actions</a></p>*
