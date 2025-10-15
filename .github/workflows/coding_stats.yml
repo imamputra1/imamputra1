@@ -3,23 +3,23 @@ name: WakaTime Readme Stats
 on:
   workflow_dispatch:
   schedule:
+    # Berjalan setiap 12 jam (pukul 00:00 dan 12:00 UTC)
     - cron: "0 */12 * * *"
 
 jobs:
   update-readme:
-    name: Update Readme with WakaTime Stats
+    name: Update this repo's README
     runs-on: ubuntu-latest
     steps:
-      # Langkah 1: Checkout kode repositori
+      # Langkah 1: Checkout kode repositori (Penting agar action bisa menulis file)
       - uses: actions/checkout@v4
 
-      # Langkah 2: Menjalankan action dari Anurag Hazra
-      - uses: anuraghazra/wakatime-readme-stats@master
+      # Langkah 2: Menjalankan action waka-readme dari Athul (sesuai referensi)
+      - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-
-          # --- OPSI TAMPILAN ---
+          BLOCKS: '⣀⣄⣤⣦⣶⣷⣿'
+          SHOW_TIME: true
+          SHOW_MASKED_TIME: true
+          LANG_COUNT: 10
           SHOW_TITLE: true
-          SHOW_TIME: true  # Opsi ini sudah cukup untuk menampilkan total waktu
-          TIME_RANGE: last_7_days
-          BLOCKS: "░▒▓"
