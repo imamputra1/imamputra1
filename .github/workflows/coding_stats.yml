@@ -10,12 +10,16 @@ jobs:
     name: Update Readme with WakaTime Stats
     runs-on: ubuntu-latest
     steps:
+      # Langkah 1: Checkout kode repositori
       - uses: actions/checkout@v4
+
+      # Langkah 2: Menjalankan action dari Anurag Hazra
       - uses: anuraghazra/wakatime-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+
+          # --- OPSI TAMPILAN ---
           SHOW_TITLE: true
+          SHOW_TIME: true  # Opsi ini sudah cukup untuk menampilkan total waktu
           TIME_RANGE: last_7_days
           BLOCKS: "░▒▓"
-          SHOW_TIME: true
-          SHOW_TOTAL: true
