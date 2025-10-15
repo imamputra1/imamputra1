@@ -19,7 +19,6 @@
     </p>
 
 ## Weekly Development Breakdown
-
 ---
 *Powered by [WakaTime](https://wakatime.com) and [GitHub Actions](https://github.com/features/actions).*
 </div>
