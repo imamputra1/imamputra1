@@ -4,10 +4,7 @@
 <a href="#">
         <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=F72CBF&center=true&width=435&lines=AI+Enthusiast;Interdisciplinary+Learner;Lifelong+Learner" alt="Typing SVG" />
 </a>
-
 <br>
-
-
 <br>
     <p align="center">
         <a href="#"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>

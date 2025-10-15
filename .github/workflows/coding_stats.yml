@@ -1,0 +1,22 @@
+name: WakaTime Readme Stats
+
+on:
+  workflow_dispatch:
+  # Pemicu 2: Jadwal (berjalan setiap 12 jam)
+  schedule:
+    - cron: "0 */12 * * *" # KOREKSI: Ini adalah jadwal yang benar untuk setiap 12 jam.
+
+jobs:
+  update-readme:
+    name: Update this repo's README with WakaTime stats
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          SHOW_TITLE: true
+          SHOW_TIME: true
+          SHOW_MASKED_TIME: true
+          LANG_COUNT: 10
+          BLOCKS: '⣀⣄⣤⣦⣶⣷⣿'
