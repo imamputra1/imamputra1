@@ -1,7 +1,7 @@
 
 <div align="center">
   <a href="#">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Courier+New&size=25&pause=1000&color=d9dbd9&center=true&width=435&lines=AI+Enthusiast;Interdisciplinary+Learner;Lifelong+Learner" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Courier+New&size=25&pause=1000&color=d9dbd9&center=true&width=435&lines=AI+and+Math+Enthusiast;Interdisciplinary+Learner;Lifelong+Learner" alt="Typing SVG" />
   </a>
 
   <br>
