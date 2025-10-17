@@ -1,13 +1,14 @@
 
 <div align="center">
   <a href="#">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Courier+New&size=25&pause=1000&color=FFFFFF&center=true&width=435&lines=AI+Enthusiast;Interdisciplinary+Learner;Lifelong+Learner" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Courier+New&size=25&pause=1000&color=d9dbd9&center=true&width=435&lines=AI+Enthusiast;Interdisciplinary+Learner;Lifelong+Learner" alt="Typing SVG" />
   </a>
 
   <br>
   <p>
     <a href="#"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
     <a href="#"><img src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white" alt="Neovim"></a>
+    <a href="#"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></a>
   </p>
 
 </div>
