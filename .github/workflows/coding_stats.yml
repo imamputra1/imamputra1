@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Berjalan setiap 12 jam
-    - cron: "0 */12 * * *"
+    - cron: "0 */6 * * *"
 
 jobs:
   update-readme:
