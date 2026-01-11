@@ -1,33 +1,29 @@
 name: WakaTime Readme Stats
 
 on:
-  workflow_dispatch: # Memungkinkan menjalankan manual dari tab Actions
+  workflow_dispatch:
   schedule:
-    # Berjalan setiap 6 jam (00:00, 06:00, 12:00, 18:00)
+    # Berjalan setiap 12 jam
     - cron: "0 */6 * * *"
 
 jobs:
   update-readme:
     name: Update This Repo's README
     runs-on: ubuntu-latest
-    # Memberi izin repositori untuk menulis ulang file README.md
+    # --- BAGIAN PALING PENTING: MEMBERI IZIN ---
     permissions:
       contents: write
-    
+    # -------------------------------------------
     steps:
-      # Langkah 1: Checkout kode ke runner
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      # Langkah 1: Checkout kode (wajib ada)
+      - uses: actions/checkout@v4
 
-      # Langkah 2: Menjalankan action WakaTime
-      - name: Update WakaTime Stats
-        uses: athul/waka-readme@master
+      # Langkah 2: Menjalankan action dari Athul (sesuai referensi yang berhasil)
+      - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           SHOW_TITLE: true
           SHOW_TIME: true
           SHOW_MASKED_TIME: true
           LANG_COUNT: 10
-          # Mengatur rentang waktu data (opsi: last_7_days, last_30_days, all_time)
-          TIME_RANGE: last_7_days
-          BLOCKS: '⣀⣄⣤⣦⣶⣷⣿'
+          BLOCKS: '⣀⣄⣤⣦⣶⣷⣿' # Menggunakan gaya baris visual yang Anda suka
