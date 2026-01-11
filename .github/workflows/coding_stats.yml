@@ -1,29 +1,36 @@
 name: WakaTime Readme Stats
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Memungkinkan kamu menjalankan manual kapan saja
   schedule:
-    # Berjalan setiap 12 jam
+    # Berjalan setiap 6 jam (sesuai setting cron 0 */6 * * *)
     - cron: "0 */6 * * *"
 
 jobs:
   update-readme:
     name: Update This Repo's README
     runs-on: ubuntu-latest
-    # --- BAGIAN PALING PENTING: MEMBERI IZIN ---
+    
+    # --- PENTING: Memberi izin bot untuk menulis ke README ---
     permissions:
       contents: write
-    # -------------------------------------------
-    steps:
-      # Langkah 1: Checkout kode (wajib ada)
-      - uses: actions/checkout@v4
+    # -------------------------------------------------------
 
-      # Langkah 2: Menjalankan action dari Athul (sesuai referensi yang berhasil)
-      - uses: athul/waka-readme@master
+    steps:
+      # Langkah 1: Mengambil kode dari repositori kamu
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Langkah 2: Menarik data dari API WakaTime dan update README
+      - name: Update WakaTime Stats
+        uses: athul/waka-readme@master
         with:
+          # Pastikan nama secret ini sama persis dengan yang ada di GitHub Settings
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           SHOW_TITLE: true
           SHOW_TIME: true
           SHOW_MASKED_TIME: true
           LANG_COUNT: 10
-          BLOCKS: '⣀⣄⣤⣦⣶⣷⣿' # Menggunakan gaya baris visual yang Anda suka
+          TIME_RANGE: last_7_days
+          # Gaya blok visual sesuai keinginanmu
+          BLOCKS: '⣀⣄⣤⣦⣶⣷⣿'
